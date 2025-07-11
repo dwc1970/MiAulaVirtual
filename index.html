@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evaluación Módulo A</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Evaluación Módulo A</h1>
+      <div id="timer" class="timer">Tiempo restante: 10:00</div>
+
+      <button type="button" id="startButton" class="button start-button">
+        Comenzar Evaluación
+      </button>
+
+      <form id="quizForm" class="quiz-form" style="display: none">
+        <div class="question-block">
+          <p class="question-text">
+            1. ¿Cuál de las siguientes afirmaciones describe mejor la percepción
+            pública de la IA, según el documento?
+          </p>
+          <label
+            ><input type="radio" name="q1" value="A" /> A. La percepción pública
+            está influenciada por la ciencia ficción y la falta de una
+            definición consensuada.</label
+          ><br />
+          <label
+            ><input type="radio" name="q1" value="B" /> B. Existe una definición
+            oficial y universalmente aceptada que la gente ignora.</label
+          ><br />
+          <label
+            ><input type="radio" name="q1" value="C" /> C. La IA es un campo
+            estático que no cambia con el tiempo.</label
+          ><br />
+          <label
+            ><input type="radio" name="q1" value="D" /> D. La mayoría de las
+            personas no tienen acceso a información sobre IA.</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            2. ¿Cuál de las siguientes es una de las aplicaciones de la IA
+            mencionadas en el documento?
+          </p>
+          <label
+            ><input type="radio" name="q2" value="A" /> A. Sistemas de riego
+            agrícola automatizados.</label
+          ><br />
+          <label
+            ><input type="radio" name="q2" value="B" /> B. Electrodomésticos
+            básicos.</label
+          ><br />
+          <label
+            ><input type="radio" name="q2" value="C" /> C. Automóviles
+            autónomos.</label
+          ><br />
+          <label
+            ><input type="radio" name="q2" value="D" /> D. Máquinas de coser
+            industriales.</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            3. Según el documento, ¿qué combinación de técnicas de IA es
+            necesaria para los automóviles autónomos?
+          </p>
+          <label
+            ><input type="radio" name="q3" value="A" /> A. Búsqueda y
+            planificación, visión mediante ordenador y toma de decisiones en
+            condiciones de incertidumbre.</label
+          ><br />
+          <label
+            ><input type="radio" name="q3" value="B" /> B. Únicamente análisis
+            de datos históricos y predicción de tendencias.</label
+          ><br />
+          <label
+            ><input type="radio" name="q3" value="C" /> C. Generación de
+            imágenes y creación de música.</label
+          ><br />
+          <label
+            ><input type="radio" name="q3" value="D" /> D. Solo reconocimiento
+            de voz y procesamiento de texto.</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            4. Una implicación previsible del avance de los automóviles
+            autónomos, según el documento, es:
+          </p>
+          <label
+            ><input type="radio" name="q4" value="A" /> A. Un aumento
+            significativo de los accidentes de tráfico.</label
+          ><br />
+          <label
+            ><input type="radio" name="q4" value="B" /> B. Una disminución en la
+            eficiencia de las cadenas logísticas.</label
+          ><br />
+          <label
+            ><input type="radio" name="q4" value="C" /> C. La eliminación total
+            de la necesidad de transporte de mercancías.</label
+          ><br />
+          <label
+            ><input type="radio" name="q4" value="D" /> D. La necesidad de que
+            los humanos asuman un papel de supervisión.</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            5. ¿Qué tipo de contenido se personaliza mediante algoritmos basados
+            en IA, según el documento?
+          </p>
+          <label
+            ><input type="radio" name="q5" value="A" /> A. Contenidos en redes
+            sociales, anuncios en línea y recomendaciones de streaming.</label
+          ><br />
+          <label
+            ><input type="radio" name="q5" value="B" /> B. Solo los libros
+            impresos.</label
+          ><br />
+          <label
+            ><input type="radio" name="q5" value="C" /> C. Programas de
+            televisión emitidos en directo.</label
+          ><br />
+          <label
+            ><input type="radio" name="q5" value="D" /> D. Exclusivamente la
+            información de boletines de noticias gubernamentales.</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            6. Las burbujas de filtro, las cámaras de eco y las noticias falsas
+            son implicaciones asociadas a qué aplicación de la IA, ¿según el
+            documento?
+          </p>
+          <label
+            ><input type="radio" name="q6" value="A" /> A. Tratamiento de
+            imágenes y vídeo.</label
+          ><br />
+          <label
+            ><input type="radio" name="q6" value="B" /> B. Recomendación de
+            contenidos.</label
+          ><br />
+          <label
+            ><input type="radio" name="q6" value="C" /> C. Automóviles
+            autónomos.</label
+          ><br />
+          <label
+            ><input type="radio" name="q6" value="D" /> D. Robots de
+            reparto.</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">7. ¿Cuál es la capital de Francia?</p>
+          <label><input type="radio" name="q7" value="A" /> A. Londres</label
+          ><br />
+          <label><input type="radio" name="q7" value="B" /> B. Berlín</label
+          ><br />
+          <label><input type="radio" name="q7" value="C" /> C. París</label
+          ><br />
+          <label><input type="radio" name="q7" value="D" /> D. Roma</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            8. ¿Qué planeta es conocido como el Planeta Rojo?
+          </p>
+          <label><input type="radio" name="q8" value="A" /> A. Tierra</label
+          ><br />
+          <label><input type="radio" name="q8" value="B" /> B. Marte</label
+          ><br />
+          <label><input type="radio" name="q8" value="C" /> C. Júpiter</label
+          ><br />
+          <label><input type="radio" name="q8" value="D" /> D. Venus</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            9. ¿Cuál es el océano más grande del mundo?
+          </p>
+          <label><input type="radio" name="q9" value="A" /> A. Atlántico</label
+          ><br />
+          <label><input type="radio" name="q9" value="B" /> B. Índico</label
+          ><br />
+          <label><input type="radio" name="q9" value="C" /> C. Pacífico</label
+          ><br />
+          <label><input type="radio" name="q9" value="D" /> D. Ártico</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            10. ¿Quién escribió "Don Quijote de la Mancha"?
+          </p>
+          <label
+            ><input type="radio" name="q10" value="A" /> A. Gabriel García
+            Márquez</label
+          ><br />
+          <label
+            ><input type="radio" name="q10" value="B" /> B. Miguel de
+            Cervantes</label
+          ><br />
+          <label
+            ><input type="radio" name="q10" value="C" /> C. William
+            Shakespeare</label
+          ><br />
+          <label
+            ><input type="radio" name="q10" value="D" /> D. Federico García
+            Lorca</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            11. ¿Cuántos continentes hay en la Tierra?
+          </p>
+          <label><input type="radio" name="q11" value="A" /> A. 5</label><br />
+          <label><input type="radio" name="q11" value="B" /> B. 6</label><br />
+          <label><input type="radio" name="q11" value="C" /> C. 7</label><br />
+          <label><input type="radio" name="q11" value="D" /> D. 8</label><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            12. ¿Cuál es el elemento químico más abundante en la corteza
+            terrestre?
+          </p>
+          <label><input type="radio" name="q12" value="A" /> A. Hierro</label
+          ><br />
+          <label><input type="radio" name="q12" value="B" /> B. Oxígeno</label
+          ><br />
+          <label><input type="radio" name="q12" value="C" /> C. Silicio</label
+          ><br />
+          <label><input type="radio" name="q12" value="D" /> D. Aluminio</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            13. ¿En qué año llegó el hombre a la luna?
+          </p>
+          <label><input type="radio" name="q13" value="A" /> A. 1959</label
+          ><br />
+          <label><input type="radio" name="q13" value="B" /> B. 1969</label
+          ><br />
+          <label><input type="radio" name="q13" value="C" /> C. 1979</label
+          ><br />
+          <label><input type="radio" name="q13" value="D" /> D. 1989</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">14. ¿Cuál es el río más largo del mundo?</p>
+          <label><input type="radio" name="q14" value="A" /> A. Amazonas</label
+          ><br />
+          <label><input type="radio" name="q14" value="B" /> B. Nilo</label
+          ><br />
+          <label
+            ><input type="radio" name="q14" value="C" /> C. Mississippi</label
+          ><br />
+          <label><input type="radio" name="q14" value="D" /> D. Yangtsé</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">15. ¿Quién pintó la Mona Lisa?</p>
+          <label
+            ><input type="radio" name="q15" value="A" /> A. Vincent van
+            Gogh</label
+          ><br />
+          <label
+            ><input type="radio" name="q15" value="B" /> B. Pablo Picasso</label
+          ><br />
+          <label
+            ><input type="radio" name="q15" value="C" /> C. Leonardo da
+            Vinci</label
+          ><br />
+          <label
+            ><input type="radio" name="q15" value="D" /> D. Claude Monet</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            16. ¿Cuál es el país más grande del mundo por superficie?
+          </p>
+          <label><input type="radio" name="q16" value="A" /> A. China</label
+          ><br />
+          <label><input type="radio" name="q16" value="B" /> B. Canadá</label
+          ><br />
+          <label><input type="radio" name="q16" value="C" /> C. Rusia</label
+          ><br />
+          <label
+            ><input type="radio" name="q16" value="D" /> D. Estados
+            Unidos</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            17. ¿Qué animal es el más rápido del mundo?
+          </p>
+          <label><input type="radio" name="q17" value="A" /> A. León</label
+          ><br />
+          <label><input type="radio" name="q17" value="B" /> B. Guepardo</label
+          ><br />
+          <label
+            ><input type="radio" name="q17" value="C" /> C. Halcón
+            Peregrino</label
+          ><br />
+          <label><input type="radio" name="q17" value="D" /> D. Caballo</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            18. ¿Cuántos huesos tiene el cuerpo humano adulto?
+          </p>
+          <label><input type="radio" name="q18" value="A" /> A. 200</label
+          ><br />
+          <label><input type="radio" name="q18" value="B" /> B. 206</label
+          ><br />
+          <label><input type="radio" name="q18" value="C" /> C. 212</label
+          ><br />
+          <label><input type="radio" name="q18" value="D" /> D. 198</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            19. ¿Cuál es la montaña más alta del mundo?
+          </p>
+          <label><input type="radio" name="q19" value="A" /> A. K2</label><br />
+          <label
+            ><input type="radio" name="q19" value="B" /> B. Monte Everest</label
+          ><br />
+          <label
+            ><input type="radio" name="q19" value="C" /> C. Kangchenjunga</label
+          ><br />
+          <label><input type="radio" name="q19" value="D" /> D. Lhotse</label
+          ><br />
+        </div>
+
+        <div class="question-block">
+          <p class="question-text">
+            20. ¿Qué gas respiramos los seres humanos?
+          </p>
+          <label
+            ><input type="radio" name="q20" value="A" /> A. Dióxido de
+            Carbono</label
+          ><br />
+          <label><input type="radio" name="q20" value="B" /> B. Nitrógeno</label
+          ><br />
+          <label><input type="radio" name="q20" value="C" /> C. Oxígeno</label
+          ><br />
+          <label><input type="radio" name="q20" value="D" /> D. Hidrógeno</label
+          ><br />
+        </div>
+
+        <button
+          type="button"
+          id="endAttemptButton"
+          class="button submit-button"
+        >
+          Terminar Intento Actual
+        </button>
+      </form>
+      <p id="attemptsInfo" class="attempts-info">Intentos restantes: 2</p>
+    </div>
+
+    <div id="resultModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Resultados de la Evaluación</h2>
+        <div id="attemptResults">
+          <p><strong>Intento Actual:</strong></p>
+          <p>Preguntas correctas: <span id="correctAnswers"></span></p>
+          <p>Preguntas incorrectas: <span id="incorrectAnswers"></span></p>
+          <p>Puntuación total: <span id="totalScore"></span></p>
+        </div>
+        <div id="previousAttemptResult" style="display: none">
+          <p><strong>Resultado del Primer Intento:</strong></p>
+          <p>Puntuación: <span id="prevScore"></span></p>
+        </div>
+        <div id="finalScoreSummary" style="display: none">
+          <p>
+            <strong
+              >Tu puntuación final es: <span id="finalScoreValue"></span
+            ></strong>
+            (La más alta de tus intentos)
+          </p>
+        </div>
+
+        <div class="modal-actions">
+          <button
+            id="retryButton"
+            class="button retry-button"
+            style="display: none"
+          >
+            Volver a Intentar
+          </button>
+          <button
+            id="finishEvaluationButton"
+            class="button submit-button"
+            style="display: none"
+          >
+            Terminar Evaluación
+          </button>
+        </div>
+        <p
+          id="noMoreAttemptsMessage"
+          style="display: none; color: red; font-weight: bold; margin-top: 15px"
+        >
+          Has agotado tus intentos. Evaluación finalizada.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,449 @@
+/* Variables de color */
+:root {
+    --color-dark-blue: #1A2E40; /* Azul oscuro */
+    --color-black: #000000;     /* Negro */
+    --color-dark-green: #004D40; /* Verde oscuro */
+    --color-light-gray: #f4f4f4;
+    --color-white: #ffffff;
+    --color-accent-green: #4CAF50; /* Un verde más brillante para acentos */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-light-gray);
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header */
+.header {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    float: left;
+    margin-right: 20px;
+    font-size: 1.8rem;
+}
+
+.header nav ul {
+    list-style: none;
+    float: right;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header nav ul li .nav-link {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.header nav ul li .nav-link:hover {
+    background-color: var(--color-dark-green);
+    border-radius: 5px;
+}
+
+/* Clearfix para header */
+.header .container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Main Content */
+.main-content {
+    padding: 40px 0;
+}
+
+.hero-section {
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: var(--color-accent-green);
+    color: var(--color-white);
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #388E3C; /* Un verde un poco más oscuro */
+}
+
+.courses-overview {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.courses-overview h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--color-dark-blue);
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card h4 {
+    font-size: 1.5rem;
+    color: var(--color-dark-blue);
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.course-button {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.course-button:hover {
+    background-color: var(--color-dark-green);
+}
+
+/* Separador horizontal */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 60px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 30px;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Permanece en su lugar */
+    z-index: 1000; /* Se sienta encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: auto; /* Habilitar el scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--color-white);
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+    color: #aaa;
+    float: right; /* Eliminar esto, ya que position: absolute es mejor para control */
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: var(--color-black);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    text-align: center;
+    color: var(--color-dark-blue);
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    background-color: var(--color-accent-green);
+    color: var(--color-white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #388E3C;
+}
+
+/* Sección de Carga de Archivos */
+.upload-section {
+    background-color: var(--color-white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    text-align: center;
+}
+
+.upload-section h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: var(--color-dark-blue);
+}
+
+.upload-area {
+    border: 2px dashed #ccc;
+    padding: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.upload-area:hover {
+    border-color: var(--color-accent-green);
+}
+
+.upload-button {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: var(--color-dark-green);
+}
+
+.upload-area p {
+    color: #666;
+    margin-top: 15px;
+}
+
+.file-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.file-list div {
+    background-color: var(--color-light-gray);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+.file-list span {
+    font-weight: bold;
+    color: var(--color-dark-blue);
+}
+
+.file-list button {
+    background-color: #dc3545; /* Rojo para eliminar */
+    color: var(--color-white);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.file-list button:hover {
+    background-color: #c82333;
+}
+
+.upload-submit-button {
+    background-color: var(--color-accent-green);
+    color: var(--color-white);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.upload-submit-button:hover {
+    background-color: #388E3C;
+}
+
+.upload-status {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.upload-status.success {
+    color: var(--color-accent-green);
+}
+
+.upload-status.error {
+    color: #dc3545;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header h1 {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .header nav ul {
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .header nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero-section {
+        padding: 40px 15px;
+    }
+
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .upload-section {
+        padding: 20px;
+    }
+
+    .upload-area {
+        padding: 25px;
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by AnimatiSS
+ * Licensed under FreeBSD License
+ * URL: https://xsgames.co/animatiss
+ * Twitter: @xsgames_
+ * ---------------------------------------------- */
+@keyframes scale-down-center {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.95);
+    }
+}
+/* Clase para aplicar la animación a los botones al estar activos (presionados) */
+.animate-scale-down:active {
+    animation: scale-down-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}

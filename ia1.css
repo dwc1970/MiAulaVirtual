@@ -1,0 +1,94 @@
+/* Estilos generales del cuerpo de la página de la diplomatura */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333; /* Color de texto oscuro */
+}
+
+/* Contenedor principal para centrar el contenido y darle un aspecto de "tarjeta" */
+.container {
+    max-width: 900px;
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
+    background: #fff; /* Fondo blanco para el contenido */
+    padding: 30px;
+    border-radius: 8px; /* Bordes redondeados suaves */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos para el título principal de la diplomatura */
+h1 {
+    color: #2c3e50; /* Azul oscuro */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em; /* Tamaño de fuente más grande */
+}
+
+/* Estilos para la introducción de la sección */
+.section-intro {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555; /* Gris medio */
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Separador horizontal */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 40px 0;
+}
+
+/* Estilos para los títulos de sección (ej. "Sección Teórica") */
+h2 {
+    color: #34495e; /* Azul más claro */
+    border-bottom: 2px solid #e74c3c; /* Línea roja debajo del título */
+    padding-bottom: 10px;
+    margin-top: 40px;
+    font-size: 2em;
+}
+
+/* Estilos para los subtítulos de sección (ej. "Cimientos del Futuro Educativo") */
+h3 {
+    color: #e74c3c; /* Rojo/Naranja vibrante */
+    margin-top: 30px;
+    font-size: 1.6em;
+}
+
+/* Estilos para los títulos de los módulos */
+h4 {
+    color: #2c3e50; /* Azul oscuro */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+/* Estilos para las listas */
+ul {
+    list-style-type: disc; /* Viñetas de disco */
+    margin-left: 20px;
+    padding: 0;
+}
+
+/* Estilos para los elementos de lista */
+li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para las cajas de "Herramientas y Recursos" */
+.resources {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #ecf0f1; /* Fondo gris muy claro */
+    border-left: 4px solid #e74c3c; /* Línea roja en el borde izquierdo */
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+}
+
+.resources p {
+    margin: 0;
+    font-weight: bold; /* Texto en negrita para "Herramientas y Recursos" */
+    color: #e74c3c; /* Color del texto del título de recursos */
+}

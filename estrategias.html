@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula Virtual - Estrategias</title>
+    <link rel="stylesheet" href="style-estrategias.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1>Aula Virtual - Estrategias</h1>
+        <nav>
+          <ul>
+            <li><a href="#" class="nav-link">Inicio</a></li>
+            <li><a href="#" class="nav-link">Cursos</a></li>
+            <li><a href="#" class="nav-link">Noticias</a></li>
+            <li><a href="#" class="nav-link">Contacto</a></li>
+            <li>
+              <a href="#" class="nav-link" id="login-btn">Iniciar Sesión</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <section class="hero-section">
+          <h2>Bienvenido a tu Espacio de Aprendizaje Estratégico</h2>
+          <p>
+            Descubre nuevas metodologías y lleva tus habilidades al siguiente
+            nivel.
+          </p>
+          <button class="cta-button" id="explore-courses">
+            Explorar Estrategias
+          </button>
+        </section>
+
+        <section class="courses-overview">
+          <h3>Estrategias de IA en la Educación</h3>
+          <div class="course-grid">
+            <div class="course-card">
+              <h4>Modulo A</h4>
+              <p>Inteligencia Artificial en el Aula</p>
+              <button
+                class="course-button"
+                id="open-modulo-a-btn"
+                data-module="Modulo A"
+              >
+                Ver Detalle
+              </button>
+            </div>
+            <div class="course-card">
+              <h4>Modulo B</h4>
+              <p>Implicaciones Éticas y Sociales de la IA</p>
+              <button
+                class="course-button"
+                id="open-modulo-b-btn"
+                data-module="Estrategia Digital Avanzada"
+              >
+                Ver Detalle
+              </button>
+            </div>
+            <div class="course-card">
+              <h4>Modulo C</h4>
+              <p>Técnicas clave para aplicar la IA en el Aula</p>
+              <button
+                class="course-button"
+                id="open-modulo-c-btn"
+                data-module="Negociación Estratégica"
+              >
+                Ver Detalle
+              </button>
+            </div>
+            <div class="course-card">
+              <h4>Evaluación</h4>
+              <p>Metodologías de Evaluación Utilizando IA</p>
+              <button
+                class="course-button"
+                id="open-evaluacion-btn"
+                data-module="Gestión de Proyectos Ágiles"
+              >
+                Ver Detalle
+              </button>
+            </div>
+            <div class="course-card">
+              <h4>Ciudadania Digital</h4>
+              <p>Ciudadanía Digital</p>
+              <button
+                class="course-button"
+                id="open-ciudadania-digital-btn"
+                data-module="Negociación Estratégica"
+              >
+                Ver Detalle
+              </button>
+            </div>
+            <div class="course-card">
+              <h4>Hacia una Pedagogia Aumentada</h4>
+              <p>Hacia una Pedagogía Aumentada</p>
+              <button
+                class="course-button"
+                id="open-pedagogia-aumentada-btn"
+                data-module="Gestión de Proyectos Ágiles"
+              >
+                Ver Detalle
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2025 Aula Virtual Estrategias. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>Iniciar Sesión</h2>
+        <form>
+          <div class="form-group">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="submit-button">Entrar</button>
+        </form>
+      </div>
+    </div>
+    <div id="modulo-a-content-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="close-modulo-a-modal">&times;</span>
+        <h2>Contenido del Módulo A: Inteligencia Artificial en el Aula</h2>
+        <div id="modulo-a-files">
+          <p>
+            Aquí verías los archivos disponibles para descargar o visualizar:
+          </p>
+          <ul>
+            <li>
+              <a href="archivos_modulo_A/01.pdf" target="_blank"
+                >¿Cómo deberíamos definir la IA?
+              </a>
+            </li>
+            <li>
+              <a href="archivos_modulo_A/02.pdf" download
+                >¿Hacia una Pedagogía "Aumentada"?
+              </a>
+            </li>
+            <li>
+              <a href="archivos_modulo_A/03.pdf" download
+                >Inteligencia Artificial y Educación</a
+              >
+            </li>
+            <li>
+              <a href="archivos_modulo_A/04.pptx" download
+                >Presentación IA (PPTX)</a
+              >
+            </li>
+          </ul>
+          <p style="margin-top: 20px; font-size: 0.9em; color: #666">
+            * Los enlaces funcionarán si los archivos existen en la carpeta
+            `archivos_modulo_A`.
+            <br />
+            * El PDF se abrirá en una nueva pestaña para su visualización.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modulo-b-content-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="close-modulo-b-modal">&times;</span>
+        <h2>
+          Contenido del Módulo B: Implicaciones Éticas y Sociales de la IA
+          (Contenido Inicial de Módulo A)
+        </h2>
+        <div id="modulo-b-files">
+          <p>
+            Aquí verías los archivos disponibles para descargar o visualizar:
+          </p>
+          <ul>
+            <li>
+              <a href="archivos_modulo_A/01.pdf" target="_blank"
+                >¿Cómo deberíamos definir la IA?
+              </a>
+            </li>
+            <li>
+              <a href="archivos_modulo_A/02.pdf" download
+                >¿Hacia una Pedagogía "Aumentada"?
+              </a>
+            </li>
+            <li>
+              <a href="archivos_modulo_A/03.pdf" download
+                >Inteligencia Artificial y Educación</a
+              >
+            </li>
+            <li>
+              <a href="archivos_modulo_A/04.pptx" download
+                >Presentación IA (PPTX)</a
+              >
+            </li>
+          </ul>
+          <p style="margin-top: 20px; font-size: 0.9em; color: #666">
+            * Los enlaces funcionarán si los archivos existen en la carpeta
+            `archivos_modulo_A`.
+            <br />
+            * El PDF se abrirá en una nueva pestaña para su visualización.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modulo-c-content-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="close-modulo-c-modal">&times;</span>
+        <h2>
+          Contenido del Módulo C: Técnicas clave para aplicar la IA en el Aula
+          (Contenido Inicial de Módulo A)
+        </h2>
+        <div id="modulo-c-files">
+          <p>
+            Aquí verías los archivos disponibles para descargar o visualizar:
+          </p>
+          <ul>
+            <li>
+              <a href="archivos_modulo_A/06.pdf" target="_blank"
+                >¿Cómo deberíamos definir la IA?
+              </a>
+            </li>
+            <li>
+              <a href="archivos_modulo_A/07.pdf" download
+                >¿Hacia una Pedagogía "Aumentada"?
+              </a>
+            </li>
+            <li>
+              <a href="archivos_modulo_A/03.pdf" download
+                >Inteligencia Artificial y Educación</a
+              >
+            </li>
+            <li>
+              <a href="archivos_modulo_A/04.pptx" download
+                >Presentación IA (PPTX)</a
+              >
+            </li>
+          </ul>
+          <p style="margin-top: 20px; font-size: 0.9em; color: #666">
+            * Los enlaces funcionarán si los archivos existen en la carpeta
+            `archivos_modulo_A`.
+            <br />
+            * El PDF se abrirá en una nueva pestaña para su visualización.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="evaluacion-content-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="close-evaluacion-modal">&times;</span>
+        <h2>
+          Contenido: Evaluación MODULO A Debe aprobar cada modulo para pasar al
+          siguiente
+        </h2>
+        <div id="evaluacion-files">
+          <p>
+            Aquí verías los archivos disponibles para descargar o visualizar:
+          </p>
+          <ul>
+            <li>
+              <a
+                href="archivos_modulo_A/EVALUACION/M_A/index.html"
+                target="_blank"
+                >EVALUACION MODULO A
+              </a>
+            </li>
+            <li>
+              <a href="archivos_modulo_A/02.pdf" download
+                >¿Hacia una Pedagogía "Aumentada"?
+              </a>
+            </li>
+            <li>
+              <a href="archivos_modulo_A/03.pdf" download
+                >Inteligencia Artificial y Educación</a
+              >
+            </li>
+            <li>
+              <a href="archivos_modulo_A/04.pptx" download
+                >Presentación IA (PPTX)</a
+              >
+            </li>
+          </ul>
+          <p style="margin-top: 20px; font-size: 0.9em; color: #666">
+            * Los enlaces funcionarán si los archivos existen en la carpeta
+            `archivos_modulo_A`.
+            <br />
+            * El PDF se abrirá en una nueva pestaña para su visualización.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="ciudadania-digital-content-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="close-ciudadania-digital-modal"
+          >&times;</span
+        >
+        <h2>Contenido: Ciudadanía Digital (Contenido Inicial de Módulo A)</h2>
+        <div id="ciudadania-digital-files">
+          <p>
+            Aquí verías los archivos disponibles para descargar o visualizar:
+          </p>
+          <ul>
+            <li>
+              <a href="archivos_modulo_A/01.pdf" target="_blank"
+                >¿Cómo deberíamos definir la IA?
+              </a>
+            </li>
+            <li>
+              <a href="archivos_modulo_A/02.pdf" download
+                >¿Hacia una Pedagogía "Aumentada"?
+              </a>
+            </li>
+            <li>
+              <a href="archivos_modulo_A/03.pdf" download
+                >Inteligencia Artificial y Educación</a
+              >
+            </li>
+            <li>
+              <a href="archivos_modulo_A/04.pptx" download
+                >Presentación IA (PPTX)</a
+              >
+            </li>
+          </ul>
+          <p style="margin-top: 20px; font-size: 0.9em; color: #666">
+            * Los enlaces funcionarán si los archivos existen en la carpeta
+            `archivos_modulo_A`.
+            <br />
+            * El PDF se abrirá en una nueva pestaña para su visualización.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="pedagogia-aumentada-content-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="close-pedagogia-aumentada-modal"
+          >&times;</span
+        >
+        <h2>
+          Contenido: Hacia una Pedagogía Aumentada (Contenido Inicial de Módulo
+          A)
+        </h2>
+        <div id="pedagogia-aumentada-files">
+          <p>
+            Aquí verías los archivos disponibles para descargar o visualizar:
+          </p>
+          <ul>
+            <li>
+              <a href="archivos_modulo_A/01.pdf" target="_blank"
+                >¿Cómo deberíamos definir la IA?
+              </a>
+            </li>
+            <li>
+              <a href="archivos_modulo_A/02.pdf" download
+                >¿Hacia una Pedagogía "Aumentada"?
+              </a>
+            </li>
+            <li>
+              <a href="archivos_modulo_A/03.pdf" download
+                >Inteligencia Artificial y Educación</a
+              >
+            </li>
+            <li>
+              <a href="archivos_modulo_A/04.pptx" download
+                >Presentación IA (PPTX)</a
+              >
+            </li>
+          </ul>
+          <p style="margin-top: 20px; font-size: 0.9em; color: #666">
+            * Los enlaces funcionarán si los archivos existen en la carpeta
+            `archivos_modulo_A`.
+            <br />
+            * El PDF se abrirá en una nueva pestaña para su visualización.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script-estrategias.js"></script>
+  </body>
+</html>
